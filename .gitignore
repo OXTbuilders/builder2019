@@ -34,8 +34,6 @@
 /var/lib/buildbot/masters/default/*
 !/var/lib/buildbot/masters/default/openxt
 /var/lib/buildbot/masters/default/openxt/*
-!/var/lib/buildbot/masters/default/legacy
-/var/lib/buildbot/masters/default/legacy/*
 !/var/lib/buildbot/masters/default/windows
 /var/lib/buildbot/masters/default/windows/*
 !/var/lib/buildbot/workers
@@ -54,10 +52,8 @@
 !/usr/lib/python3/dist-packages/buildbot/*
 !/var/lib/buildbot/masters/*
 !/var/lib/buildbot/workers/*
+!/var/lib/buildbot/masters/default/*
 !/home/shared/*
-!/var/lib/buildbot/masters/default/openxt/500
-!/var/lib/buildbot/masters/default/legacy/300
-!/var/lib/buildbot/masters/default/windows/400
 
 # Re-ignore the files/directories we don't want
 *~
