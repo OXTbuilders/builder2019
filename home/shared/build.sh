@@ -209,7 +209,7 @@ fi
 
 cd - > /dev/null
 
-scp -r ~/xt-builds/${BUILD_ID} builds@openxt.ainfosec.com:/home/builds/${CUSTOM}/${BRANCH}/
+scp -r ~/xt-builds/${BUILD_ID} builds@openxt.ainfosec.com:/home/builds/temp/${BRANCH}/
 
 exit
 }
