@@ -781,8 +781,24 @@ class ForceScheduler(base.BaseScheduler):
         changeids = [type(a) == int and a or a.number for a in changeids]
 
         real_properties = Properties()
+
+        # OpenXT
+        revdict = {}
+        urldict = {}
+        repo_overrides = ""
+        # End OpenXT
+
         for pname, pvalue in properties.items():
             real_properties.setProperty(pname, pvalue, "Force Build Form")
+            # OpenXT
+            if ('url' in pname) and pvalue:
+                name = pname[0:pname.find('url')]
+                urldict[name] = (name,pvalue)
+        keys = urldict.keys()
+        for key in keys:
+            repo_overrides = repo_overrides+urldict[key][0] + ':' + urldict[key][1]+','
+        real_properties.setProperty('repos', repo_overrides, "Force Build Form")
+        # End OpenXT
 
         return (real_properties, changeids, sourcestamps)
 
