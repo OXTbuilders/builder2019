@@ -204,7 +204,7 @@ if [[ $BRANCH = stable-6* ]]; then
     sed -i "s|^BRANCH=.*$|BRANCH=${BRANCH}|" build.sh
     ./build.sh ${BUILD_ID}
 else
-    ./build.sh -j 12 -i ${BUILD_ID} -b ${BRANCH} -W
+    ./build.sh -j 12 -i ${BUILD_ID} -b ${BRANCH}
 fi
 
 cd - > /dev/null

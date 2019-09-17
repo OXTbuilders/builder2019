@@ -36,6 +36,7 @@ else
 #    NAME_SITE="custom"
     echo "Override(s) found, starting a custom build."
 fi
+CUSTOM=temp
 
 do_overrides () {
     for trip in $OVERRIDES; do

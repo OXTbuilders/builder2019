@@ -67,4 +67,4 @@ oracle*
 .htpasswd
 /var/lib/buildbot/workers/openxt1/openxt/build/openxt
 /var/lib/buildbot/workers/openxt2/openxt/build/openxt
-/var/lib/buildbot/workers/openxt32/openxt64/build/openxt
+/var/lib/buildbot/workers/openxt32/openxt32/build/openxt
